@@ -31,6 +31,8 @@ app.get('/get/:set/:imgs', async(req, res)=>{
     }
 })
 
+app.get('/', (req, res) => {res.send('Server running');});
+
 app.listen(5000, () => {
     console.log('Listening');
 })
